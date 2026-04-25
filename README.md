@@ -1,16 +1,13 @@
-# Minecraft Server Containerfile
+# Papyrus Container
 
 ## Arguments
-- Java Version: Change depending on version of Minecraft you're using
+- JAVA_VERSION (default: 21), match with the required Java version for selected version of Minecraft
+
+## Environment Variables
+- EULA (default: false), set to true in order to agree to Minecraft's EULA (https://www.minecraft.net/en-us/eula)
+- LOADER (default: PAPER), set to either "PAPER" or "FABRIC" in order to switch the downloaded loader
+- MINECRAFT_VERSION (default: 1.21), set to the desired minecraft version
+- MEMORY (default: 4G), set to the desired "-Xmx" value for the Java VM
 
 ## Ports
-- Port exposed is 25565
-
-## Server file
-- server.jar will be copied from "build" directory
-
-## EULA
-- You must agree to the eula.txt
-
-## RAM
-- Environment variable MEMORY can change memory value
+- Port exposed is 25565/tcp
