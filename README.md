@@ -11,3 +11,6 @@
 
 ## Ports
 - Port exposed is 25565/tcp
+
+## Example Command
+```podman run -e LOADER="FABRIC" -e MINECRAFT_VERSION="1.21.11" -e EULA="true" -P -i localhost/minecraft:latest```
